@@ -17,9 +17,9 @@ hosted on GitHub and executable from the command line, with clear documentation 
 
 2. **Features for Each Class:**
 
-* **Initializer**(`__init__`): Accept dimensions (e.g., radius for circle, side length for square, width and height for rectangle) as parameters.
+* **Initializer** **(`__init__`)**: Accept dimensions (e.g., radius for circle, side length for square, width and height for rectangle) as parameters.
 
-* **String Representation** (`__str__`): Return a string detailing the dimensions and area of the figure.
+* **String Representation** **(`__str__`)**: Return a string detailing the dimensions and area of the figure.
 
 * **Comparison Methods** **(`__eq__`, `__lt__`, etc.)**: Allow for comparison of objects based on their area, enabling sorting and equality checks.  
 
