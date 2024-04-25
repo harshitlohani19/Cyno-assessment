@@ -1,23 +1,31 @@
 import math
 class circle:
-    def __init__(self,radius):#Method to intialize circle radius
+
+    #Method to intialize circle radius
+    def __init__(self,radius):
         self.radius= radius
-    
-    def area(self):#Method to return Circle Area
+
+    #Method to return Circle Area
+    def area(self):
         area = math.pi * self.radius**2
         return area
-
-    def circumference(self): #Method to return Cicle Circumference
+    
+    #Method to return Cicle Circumference
+    def circumference(self):
         circumference = 2*math.pi*self.radius
         return circumference
     
-    def __str__(self):#Method to return string representation
+    #Method to return string representation    
+    def __str__(self):
          str = f"Circle radius: {self.radius}, Area: {self.area()}, Circumference: {self.circumference()}"
          return str
-    def __eq__(self, other):#Method to check if areas are equal or not,returns True/False
+    
+    #Method to check if areas are equal or not,returns True/False
+    def __eq__(self, other):
         aeq = self.area() == other.area()
         return aeq     
     
-    def __lt__(self,other):#Method to Check if area1 is < than area2,returns True/False
+    #Method to Check if area1 is < than area2,returns True/False    
+    def __lt__(self,other):
         lt = self.area() < other.area()
         return lt
