@@ -36,7 +36,54 @@ class testrectangle(unittest.TestCase):
             self.assertEqual(rectangle.width,5)
             self.assertEqual(rectangle.height,6)
         
+        def test_area(self):
+            rectangle=Rectangle(5,6)
+            self.assertEqual(rectangle.area(),30)
 
+        def test_perimeter(self):
+            rectangle=Rectangle(5,6)
+            self.assertEqual(rectangle.perimeter(),22)
 
+        def test_strep(self):
+            rectangle=Rectangle(5,6)
+            self.assertTrue(rectangle.__str__(),f"Rectangle with width {5} and height {6}, Area: {30}, Perimeter: {22}")
+
+        def test_eq(self):
+            rect1=Rectangle(5,5)
+            rect2=Rectangle(6,6)
+            self.assertFalse(rect1.area() == rect2.area())
+
+        def test_largerthan(self):
+            rect1=Rectangle(5,5)
+            rect2=Rectangle(6,6)
+            self.assertTrue(rect1.area()<rect2.area())
+        
+class testsquare(unittest.TestCase):
+    def test_initialization(self):
+        square=Square(5)
+        self.assertEqual(square.side_length,5)
+
+    def test_area(self):
+        square=Square(5)
+        self.assertAlmostEqual(square.area(),25,places=1)
+    
+    def test_peri(self):
+        square = Square(5)
+        self.assertAlmostEqual(square.perimeter(),20)
+
+    def test_strep(self):
+        square=Square(5)
+        self.assertTrue(square.__str__(),f'Square with side length {5}, Area: {25}, Perimeter: {20}')
+
+    def test_eq(self):
+        square1=Square(5)
+        square2=Square(6)
+        self.assertFalse(square1.area() == square2.area())
+
+    def test_largerthan(self):
+        square1=Square(5)
+        square2=Square(6)
+        self.assertTrue(square1.area()<square2.area())
+        
 if __name__ == '__main__':
     unittest.main()
