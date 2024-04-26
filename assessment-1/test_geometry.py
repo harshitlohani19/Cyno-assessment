@@ -23,14 +23,9 @@ class testcircle(unittest.TestCase):
     # Module to check the string representation. 
     def test_strep(self):
         Circle=circle(5)
-<<<<<<< HEAD
         self.assertEqual(str(Circle),f'Circle radius: {5}, Area: {78.53981633974483}, Circumference: {31.41592653589793}')
 
-=======
-        self.assertTrue(Circle.__str__(),f'Circle radius: {5}, Area: {78.5}, Circumference: {31.4}')
-    
-    # Module to check the equality of two circle instances.
->>>>>>> 568f73a3d899a67f5e85486863236dac6fd8d3ca
+    #Module to check the equality of 2 Circles
     def test_eq(self):
         Circle1=circle(5)
         Circle2=circle(6)
