@@ -18,7 +18,7 @@ class testcircle(unittest.TestCase):
 
     def test_strep(self):
         Circle=circle(5)
-        self.assertTrue(Circle.__str__(),f'Circle radius: {5}, Area: {78.5}, Circumference: {31.4}')
+        self.assertEqual(str(Circle),f'Circle radius: {5}, Area: {78.53981633974483}, Circumference: {31.41592653589793}')
 
     def test_eq(self):
         Circle1=circle(5)
@@ -46,7 +46,7 @@ class testrectangle(unittest.TestCase):
 
         def test_strep(self):
             rectangle=Rectangle(5,6)
-            self.assertTrue(rectangle.__str__(),f"Rectangle with width {5} and height {6}, Area: {30}, Perimeter: {22}")
+            self.assertEqual(str(rectangle),f"Rectangle with width {5} and height {6}, Area: {30}, Perimeter: {22}")
 
         def test_eq(self):
             rect1=Rectangle(5,5)
@@ -73,7 +73,7 @@ class testsquare(unittest.TestCase):
 
     def test_strep(self):
         square=Square(5)
-        self.assertTrue(square.__str__(),f'Square with side length {5}, Area: {25}, Perimeter: {20}')
+        self.assertEqual(str(square),f'Square with side length {5}, Area: {25}, Perimeter: {20}')
 
     def test_eq(self):
         square1=Square(5)
@@ -84,6 +84,6 @@ class testsquare(unittest.TestCase):
         square1=Square(5)
         square2=Square(6)
         self.assertTrue(square1.area()<square2.area())
-        
+
 if __name__ == '__main__':
     unittest.main()
