@@ -44,7 +44,8 @@ class Circle:
 
     def __lt__(self, other):
         """
-        Method to check if the area of the current circle is less than the area of another circle.
+        Method to check if the area of the current
+        circle is less than the area of another circle.
         """
         lt = self.area() < other.area()
         return lt
