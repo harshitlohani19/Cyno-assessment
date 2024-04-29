@@ -23,7 +23,7 @@ class Rectangle:
         return 2 * (self.width + self.height)
 
     """
-    Method to return a string representation of the rectangle including its 
+    Method to return a string representation of the rectangle including its
     width, height, area and perimeter.
     """
 
