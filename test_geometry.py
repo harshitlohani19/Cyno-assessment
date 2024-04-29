@@ -51,6 +51,7 @@ class testcircle(unittest.TestCase):
         self.assertFalse(Circle1.area() == Circle2.area())
 
     """
+    rectangle
     Module to check whether the area of the first circle instance is
     less than the other instance.
     """
@@ -98,6 +99,7 @@ class testrectangle(unittest.TestCase):
 
     def test_str(self):
         rectangle = Rectangle(5, 6)
+        rectangle
         expected_output = f"Rectangle with width {5} and height {6}"
         self.assertEqual(str(rectangle), expected_output)
 
