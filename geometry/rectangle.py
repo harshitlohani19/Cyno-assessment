@@ -28,10 +28,7 @@ class Rectangle:
     """
 
     def __str__(self):
-        return (
-            f"Rectangle with width {self.width} and height {self.height}, "
-            f"Area: {self.area()}, Perimeter: {self.perimeter()}"
-        )
+        return f"Rectangle with width {self.width} and height {self.height}"
 
     """
     Method to compare the area of current rectangle with another rectangle,
