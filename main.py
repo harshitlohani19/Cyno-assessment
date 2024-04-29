@@ -2,7 +2,7 @@
 importing classes from Geometry module
 """
 
-from geometry.circle import Circle
+from geometry.circle import circle
 from geometry.square import Square
 from geometry.rectangle import Rectangle
 
@@ -23,7 +23,7 @@ def main():
         input radius
         """
         radius = int(input("Enter Radius: "))
-        circle = Circle(radius)
+        Circle = circle(radius)
         print(Circle)
     elif figure == "square":
         """
