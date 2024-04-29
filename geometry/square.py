@@ -14,7 +14,7 @@ class Square:
         """
         Method to calculate and return the area of the square.
         """
-        return self.side_length ** 2
+        return self.side_length**2
 
     def perimeter(self):
         """
