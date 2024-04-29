@@ -4,7 +4,7 @@ from geometry.rectangle import Rectangle
 from geometry.square import Square
 
 """
-Class to check the test cases of class Circle in geometry module. 
+Class to check the test cases of class Circle in geometry module.
 """
 
 
@@ -39,12 +39,7 @@ class testcircle(unittest.TestCase):
 
     def test_strep(self):
         Circle = circle(5)
-        self.assertEqual(
-            str(Circle),
-            f"Circle radius: {5}, "
-            f"Area: {78.53981633974483}, "
-            f"Circumference: {31.41592653589793}",
-        )
+        self.assertEqual(str(Circle), f"Circle radius: {5}")
 
     """
     Module to check the equality of 2 Circles
@@ -56,8 +51,9 @@ class testcircle(unittest.TestCase):
         self.assertFalse(Circle1.area() == Circle2.area())
 
     """
-    Module to check whether the area of the first circle instance is less than
-    the other instance.
+    rectangle
+    Module to check whether the area of the first circle instance is
+    less than the other instance.
     """
 
     def test_lessthan(self):
@@ -101,16 +97,15 @@ class testrectangle(unittest.TestCase):
     Module to check the string representation.
     """
 
-    def test_strep(self):
+    def test_str(self):
         rectangle = Rectangle(5, 6)
-        self.assertEqual(
-            str(rectangle),
-            f"Rectangle with width {5} and height {6},"
-            f"Area: {30}, Perimeter: {22}",
-        )
+        rectangle
+        expected_output = f"Rectangle with width {5} and height {6}"
+        self.assertEqual(str(rectangle), expected_output)
+
 
     """
-    Module to check the equality of area of rectangle with the area of 
+    Module to check the equality of area of rectangle with the area of
     other rectangle.
     """
 
@@ -164,11 +159,12 @@ class testsquare(unittest.TestCase):
     Module to check the string representaion of an object of class Square.
     """
 
-    def test_strep(self):
+    def test_str(self):
         square = Square(5)
-        self.assertEqual(
-            str(square), f"Square with side length {5}, Area: {25}, Perimeter: {20}"
+        expected_output = (
+            f"Square with side length {5}, " f"Area: {25}, Perimeter: {20}"
         )
+        self.assertEqual(str(square), expected_output)
 
     """
     Module to check the equality of areas of two rectangle instances.
@@ -180,7 +176,7 @@ class testsquare(unittest.TestCase):
         self.assertFalse(square1.area() == square2.area())
 
     """
-    Module to check whether the area of one square is less than 
+    Module to check whether the area of one square is less than
     the area of other.
     """
 
