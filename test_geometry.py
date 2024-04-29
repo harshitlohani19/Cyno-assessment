@@ -103,7 +103,6 @@ class testrectangle(unittest.TestCase):
         expected_output = f"Rectangle with width {5} and height {6}"
         self.assertEqual(str(rectangle), expected_output)
 
-
     """
     Module to check the equality of area of rectangle with the area of
     other rectangle.

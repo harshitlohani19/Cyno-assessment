@@ -1,7 +1,7 @@
 import math
 
 
-class Circle:
+class circle:
     """
     Circle class to calculate area and circumference of a circle.
     """
