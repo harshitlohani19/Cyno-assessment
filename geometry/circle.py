@@ -30,9 +30,7 @@ class circle:
         """
         Method to return a string representation of the Circle object.
         """
-        str_repr = (
-            f"Circle radius: {self.radius}"
-        )
+        str_repr = f"Circle radius: {self.radius}"
         return str_repr
 
     def __eq__(self, other):
