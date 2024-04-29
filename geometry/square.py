@@ -1,25 +1,48 @@
 class Square:
-    
-    # Method to initialize an object of square class with provided length
+    """
+    Square class to represent a square and its properties.
+    """
+
     def __init__(self, side_length):
+        """
+        Method to initialize an object of Square class with the provided
+        side length.
+        """
         self.side_length = side_length
-    
-    # Method to return the area of the square
+
     def area(self):
+        """
+        Method to calculate and return the area of the square.
+        """
         return self.side_length ** 2
-    
-    # Method to calculate the perimeter of the square
+
     def perimeter(self):
+        """
+        Method to calculate and return the perimeter of the square.
+        """
         return 4 * self.side_length
-    
-    # Method to return the string representation of the square including the length, area, and perimeter
+
     def __str__(self):
-        return f"Square with side length {self.side_length}, Area: {self.area()}, Perimeter: {self.perimeter()}"
-    
-    # Method to compare the area of current square with another square, return True if equal,return False otherwise. 
+        """
+        Method to return the string representation of the square, including
+        its side length, area, and perimeter.
+        """
+        return (
+            f"Square with side length {self.side_length}, "
+            f"Area: {self.area()}, Perimeter: {self.perimeter()}"
+        )
+
     def __eq__(self, other):
+        """
+        Method to compare the area of the current square with another
+        square. Returns True if their areas are equal, False otherwise.
+        """
         return self.area() == other.area()
-    
-    # Method to compare area of current square with another square and return True if area of the current square is less than the area of the other square,return  False otherwise.
+
     def __lt__(self, other):
+        """
+        Method to compare the area of the current square with another
+        square. Returns True if the area of the current square is less
+        than the area of the other square, False otherwise.
+        """
         return self.area() < other.area()
