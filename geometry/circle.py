@@ -1,20 +1,22 @@
+"""
+importing math module
+"""
 import math
 
 
-class circle:
+class Circle:
     """
-    Circle class to calculate area and circumference of a circle.
+    Circle class definition
     """
-
     def __init__(self, radius):
         """
-        Constructor to initialize the radius of the circle.
+        Constructor to initialize the radius.
         """
         self.radius = radius
 
     def area(self):
         """
-        Method to calculate and return the area of the circle.
+        Return the area of the circle.
         """
         area = math.pi * self.radius**2
         return area
