@@ -17,7 +17,7 @@ class Circle:
 
     def circumference(self):
         """
-        Calculates and return the circumference of the circle.
+        Returns the circumference of the circle.
         """
         circumference = 2 * math.pi * self.radius
         return circumference
