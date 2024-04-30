@@ -3,22 +3,15 @@ from geometry.circle import circle
 from geometry.rectangle import Rectangle
 from geometry.square import Square
 
-"""
-Class to check the test cases of class Circle in geometry module.
-"""
-
 
 class testcircle(unittest.TestCase):
-    """
-    Module to check initialization
-    """
 
     def test_initialization(self):
         Circle = circle(5)
         self.assertEqual(Circle.radius, 5)
 
     """
-    Module to check the area of circle
+    checks the area of circle
     """
 
     def test_area(self):
@@ -26,7 +19,7 @@ class testcircle(unittest.TestCase):
         self.assertAlmostEqual(Circle.area(), 78.5, places=1)
 
     """
-    Module to check the circumference of circle.
+    checks the circumference of circle.
     """
 
     def test_circumference(self):
@@ -34,7 +27,7 @@ class testcircle(unittest.TestCase):
         self.assertAlmostEqual(Circle.circumference(), 31.4, places=1)
 
     """
-    Module to check the string representation.
+    checks the string representation.
     """
 
     def test_strep(self):
@@ -42,7 +35,7 @@ class testcircle(unittest.TestCase):
         self.assertEqual(str(Circle), f"Circle radius: {5}")
 
     """
-    Module to check the equality of 2 Circles
+    checks the equality of 2 Circles
     """
 
     def test_eq(self):
@@ -51,8 +44,7 @@ class testcircle(unittest.TestCase):
         self.assertFalse(Circle1.area() == Circle2.area())
 
     """
-    rectangle
-    Module to check whether the area of the first circle instance is
+    checks whether the area of the first circle instance is
     less than the other instance.
     """
 
@@ -62,15 +54,7 @@ class testcircle(unittest.TestCase):
         self.assertTrue(Circle1.area() < Circle2.area())
 
 
-"""
-Module to check the test cases in class Rectangle in geometry module.
-"""
-
-
 class testrectangle(unittest.TestCase):
-    """
-    Module to check the initialization of Rectangle object.
-    """
 
     def test_initializer(self):
         rectangle = Rectangle(5, 6)
@@ -78,7 +62,7 @@ class testrectangle(unittest.TestCase):
         self.assertEqual(rectangle.height, 6)
 
     """
-    Module to check the area of Rectangle
+    checks the area of Rectangle
     """
 
     def test_area(self):
@@ -86,7 +70,7 @@ class testrectangle(unittest.TestCase):
         self.assertEqual(rectangle.area(), 30)
 
     """
-    Module to check the perimeter of Rectangle.
+    checks the perimeter of Rectangle.
     """
 
     def test_perimeter(self):
@@ -94,7 +78,7 @@ class testrectangle(unittest.TestCase):
         self.assertEqual(rectangle.perimeter(), 22)
 
     """
-    Module to check the string representation.
+    checks the string representation.
     """
 
     def test_str(self):
@@ -104,7 +88,7 @@ class testrectangle(unittest.TestCase):
         self.assertEqual(str(rectangle), expected_output)
 
     """
-    Module to check the equality of area of rectangle with the area of
+    checks the equality of area of rectangle with the area of
     other rectangle.
     """
 
@@ -114,7 +98,7 @@ class testrectangle(unittest.TestCase):
         self.assertFalse(rect1.area() == rect2.area())
 
     """
-    Module to check whether the area of first rectangle class instance
+    checks whether the area of first rectangle class instance
     is less than the other instance.
     """
 
@@ -124,22 +108,13 @@ class testrectangle(unittest.TestCase):
         self.assertTrue(rect1.area() < rect2.area())
 
 
-"""
-Class to check the test cases of Class Square in geometry module.
-"""
-
-
 class testsquare(unittest.TestCase):
-    """
-    Module to check the initialization of an instance of class Square.
-    """
-
     def test_initialization(self):
         square = Square(5)
         self.assertEqual(square.side_length, 5)
 
     """
-    Module to check the area of Square.
+    checks the area of Square.
     """
 
     def test_area(self):
@@ -147,7 +122,7 @@ class testsquare(unittest.TestCase):
         self.assertAlmostEqual(square.area(), 25, places=1)
 
     """
-    Module to check the perimeter of Square.
+    checks the perimeter of Square.
     """
 
     def test_peri(self):
@@ -155,7 +130,7 @@ class testsquare(unittest.TestCase):
         self.assertAlmostEqual(square.perimeter(), 20)
 
     """
-    Module to check the string representaion of an object of class Square.
+    checks the string representaion of an object of class Square.
     """
 
     def test_str(self):
@@ -166,7 +141,7 @@ class testsquare(unittest.TestCase):
         self.assertEqual(str(square), expected_output)
 
     """
-    Module to check the equality of areas of two rectangle instances.
+    checks the equality of areas of two rectangle instances.
     """
 
     def test_eq(self):
@@ -175,7 +150,7 @@ class testsquare(unittest.TestCase):
         self.assertFalse(square1.area() == square2.area())
 
     """
-    Module to check whether the area of one square is less than
+    checks whether the area of one square is less than
     the area of other.
     """
 
