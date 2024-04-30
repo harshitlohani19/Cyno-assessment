@@ -16,6 +16,7 @@ def main():
     """
     user input for shape
     """
+    
     figure = input("Choose Shape: Circle, Rectangle, Square- ")
     figure = figure.lower()
     if figure == "circle":
