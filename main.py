@@ -8,7 +8,8 @@ def main():
     figure = input("Choose Shape: Circle, Rectangle, Square- ")
     figure = figure.lower()
     if figure == "circle":
-        radius = int(input("Enter Radius: "))
+        radius = str(input("Enter Radius: "))
+        radius = int(radius, 16)
         circle = Circle(radius)
         print(circle)
     elif figure == "square":

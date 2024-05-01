@@ -29,7 +29,7 @@ class Square:
         """
         return self.area() == other.area()
 
-    def __lt__(self, other):
+    def __lt__(self, other) -> bool:
         """
         Returns True if the area of the current square is less
         than the area of the other square, False otherwise.
