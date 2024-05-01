@@ -4,21 +4,32 @@ from geometry.rectangle import Rectangle
 
 
 def main():
-    """user input for shape"""
     figure = input("Choose Shape: Circle, Rectangle, Square- ")
     figure = figure.lower()
     if figure == "circle":
-        radius = int(input("Enter Radius: "))
-        circle = Circle(radius)
-        print(circle)
+        radius = input("Enter Radius: ")
+        try:
+            radius = float(radius)
+            circle = Circle(float(radius))
+            print(circle)
+        except ValueError:
+            print("Invalid Radius")  
     elif figure == "square":
-        length = int(input("Enter Length"))
-        print(Square(length))
+        length = input("Enter Length: ")
+        try:
+            length = float(length)
+            print(Square(length))
+        except ValueError:
+            print("Invalid Length")    
     elif figure == "rectangle":
-        breadth, length = map(
-            int, input("Enter Length and Breadth separated by space: ").split()
-        )
-        print(Rectangle(breadth, length))
+        width = input("Enter Width: ")
+        height = input("Enter Height: ")
+        try:
+            width = float(width)
+            height = float(height)
+            print(Rectangle(width, height))
+        except ValueError:
+            print("Invalid Width or Height")
     else:
         print("Invalid Shape")
 
