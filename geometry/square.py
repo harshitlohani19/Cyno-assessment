@@ -19,8 +19,7 @@ class Square:
         Returns the string representation of the square.
         """
         return (
-            f"Square with side length {self.side_length}, "
-            f"Area: {self.area()}, Perimeter: {self.perimeter()}"
+            f"Square with side length {self.side_length}"
         )
 
     def __eq__(self, other):
