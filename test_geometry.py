@@ -5,6 +5,7 @@ from geometry.square import Square
 
 
 class TestCircle(unittest.TestCase):
+    """Test Cases for Class Circle"""
 
     def test_initialization(self):
         circle = Circle(5)
@@ -34,6 +35,7 @@ class TestCircle(unittest.TestCase):
 
 
 class Testrectangle(unittest.TestCase):
+    """Test Cases for Class Rectangle"""
 
     def test_initializer(self):
         rectangle = Rectangle(5, 6)
@@ -65,6 +67,8 @@ class Testrectangle(unittest.TestCase):
 
 
 class Testsquare(unittest.TestCase):
+    """Test Cases for Class Square"""
+
     def test_initialization(self):
         square = Square(5)
         self.assertEqual(square.side_length, 5)
@@ -95,5 +99,4 @@ class Testsquare(unittest.TestCase):
         self.assertTrue(square1.area() < square2.area())
 
 
-if __name__ == "__main__":
-    unittest.main()
+unittest.main()
