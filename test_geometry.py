@@ -97,4 +97,5 @@ class Testsquare(unittest.TestCase):
         self.assertTrue(square1.side_length < square2.side_length)
 
 
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()
