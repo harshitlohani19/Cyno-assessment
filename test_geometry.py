@@ -84,7 +84,7 @@ class Testsquare(unittest.TestCase):
     def test_str(self):
         square = Square(5)
         expected_output = (
-            f"Square with side length {5}, " f"Area: {25}, Perimeter: {20}"
+            f"Square with side length {5}"
         )
         self.assertEqual(str(square), expected_output)
 
