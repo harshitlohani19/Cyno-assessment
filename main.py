@@ -30,6 +30,7 @@ def main():
             print(Rectangle(width, height))
         except ValueError:
             print("Invalid Width or Height")
+
     else:
         print("Invalid Shape")
 
