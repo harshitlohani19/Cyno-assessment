@@ -1,28 +1,26 @@
 class Square:
-    def __init__(self, side_length):
+    def __init__(self, side_length) -> None:
         self.side_length = side_length
 
-    def area(self):
+    def area(self) -> float:
         """
         Returns the area of the square.
         """
         return self.side_length**2
 
-    def perimeter(self):
+    def perimeter(self) -> float:
         """
         Returns the perimeter of the square.
         """
         return 4 * self.side_length
 
-    def __str__(self):
+    def __str__(self) -> str:
         """
         Returns the string representation of the square.
         """
-        return (
-            f"Square with side length {self.side_length}"
-        )
+        return f"Square with side length {self.side_length}"
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         """
         Returns True if their areas are equal, False otherwise.
         """
