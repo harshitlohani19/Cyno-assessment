@@ -24,11 +24,11 @@ class Square:
         """
         Returns True if their areas are equal, False otherwise.
         """
-        return self.area() == other.area()
+        return self.side_length == other.side_length
 
     def __lt__(self, other) -> bool:
         """
         Returns True if the area of the current square is less
         than the area of the other square, False otherwise.
         """
-        return self.area() < other.area()
+        return self.side_length < other.side_length

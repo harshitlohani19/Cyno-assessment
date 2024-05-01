@@ -33,7 +33,7 @@ class Circle:
         """
         Checks if the areas of two circles are equal.
         """
-        aeq = self.area() == other.area()
+        aeq = self.radius == other.radius
         return aeq
 
     def __lt__(self, other) -> bool:
@@ -41,5 +41,5 @@ class Circle:
         Checks if the area of the current
         circle is less than the area of another circle.
         """
-        lt = self.area() < other.area()
+        lt = self.radius < other.radius
         return lt
