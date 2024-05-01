@@ -11,21 +11,23 @@ def main():
         radius = input("Enter Radius: ")
         try:
             radius = float(radius)
+<<<<<<< HEAD
             if radius > 0:
                 circle = Circle(float(radius))
                 print(circle)
             else:
                 print("Radius cannot be negative")
+=======
+            circle = Circle(float(radius))
+            print(circle)
+>>>>>>> a4fe171 (')
         except ValueError:
             print("Invalid Radius")
     elif figure == "square":
         length = input("Enter Length: ")
         try:
             length = float(length)
-            if length < 0:
-                print("Length cannot be negative")
-            else:
-                print(Square(length))
+            print(Square(length))
         except ValueError:
             print("Invalid Length")
     elif figure == "rectangle":
@@ -34,10 +36,7 @@ def main():
         try:
             width = float(width)
             height = float(height)
-            if width < 0 or height < 0:
-                print("Width or height cannot be 0")
-            else:
-                print(Rectangle(width, height))
+            print(Rectangle(width, height))
         except ValueError:
             print("Invalid Width or Height")
 
