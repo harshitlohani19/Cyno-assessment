@@ -26,12 +26,12 @@ class TestCircle(unittest.TestCase):
     def test_eq(self) -> None:
         circle1 = Circle(5)
         circle2 = Circle(6)
-        self.assertFalse(circle1.area() == circle2.area())
+        self.assertFalse(circle1.radius == circle2.radius)
 
     def test_lessthan(self) -> None:
         circle1 = Circle(5)
         circle2 = Circle(6)
-        self.assertTrue(circle1.area() < circle2.area())
+        self.assertTrue(circle1.radius < circle2.radius)
 
 
 class Testrectangle(unittest.TestCase):
@@ -89,12 +89,12 @@ class Testsquare(unittest.TestCase):
     def test_eq(self) -> None:
         square1 = Square(5)
         square2 = Square(6)
-        self.assertFalse(square1.area() == square2.area())
+        self.assertFalse(square1.side_length == square2.side_length)
 
     def test_lessthan(self) -> None:
         square1 = Square(5)
         square2 = Square(6)
-        self.assertTrue(square1.area() < square2.area())
+        self.assertTrue(square1.side_length < square2.side_length)
 
 
 unittest.main()
