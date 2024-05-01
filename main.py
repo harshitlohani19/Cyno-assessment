@@ -13,14 +13,14 @@ def main():
             circle = Circle(float(radius))
             print(circle)
         except ValueError:
-            print("Invalid Radius")  
+            print("Invalid Radius")
     elif figure == "square":
         length = input("Enter Length: ")
         try:
             length = float(length)
             print(Square(length))
         except ValueError:
-            print("Invalid Length")    
+            print("Invalid Length")
     elif figure == "rectangle":
         width = input("Enter Width: ")
         height = input("Enter Height: ")

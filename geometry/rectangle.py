@@ -3,6 +3,7 @@ class Rectangle:
         self.width = width
         self.height = height
 
+    @property
     def area(self) -> float:
         """
         Returns the area of the rectangle
@@ -25,11 +26,11 @@ class Rectangle:
         """
         Returns True if equal, False otherwise.
         """
-        return self.area() == other.area()
+        return self.area == other.area
 
     def __lt__(self, other) -> bool:
         """
         Returns True if area of the current rectangle is less than the area
         of the other rectangle, False otherwise.
         """
-        return self.area() < other.area()
+        return self.area < other.area

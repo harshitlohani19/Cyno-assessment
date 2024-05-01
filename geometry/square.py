@@ -2,12 +2,14 @@ class Square:
     def __init__(self, side_length) -> None:
         self.side_length = side_length
 
+    @property
     def area(self) -> float:
         """
         Returns the area of the square.
         """
         return self.side_length**2
 
+    @property
     def perimeter(self) -> float:
         """
         Returns the perimeter of the square.
