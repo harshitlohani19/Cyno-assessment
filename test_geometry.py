@@ -13,11 +13,11 @@ class TestCircle(unittest.TestCase):
 
     def test_area(self) -> None:
         circle = Circle(5)
-        self.assertAlmostEqual(circle.area(), 78.5, places=1)
+        self.assertAlmostEqual(circle.area, 78.5, places=1)
 
     def test_circumference(self) -> None:
         circle = Circle(5)
-        self.assertAlmostEqual(circle.circumference(), 31.4, places=1)
+        self.assertAlmostEqual(circle.circumference, 31.4, places=1)
 
     def test_strep(self) -> None:
         circle = Circle(5)
@@ -44,7 +44,7 @@ class Testrectangle(unittest.TestCase):
 
     def test_area(self) -> None:
         rectangle = Rectangle(5, 6)
-        self.assertEqual(rectangle.area(), 30)
+        self.assertEqual(rectangle.area, 30)
 
     def test_perimeter(self) -> None:
         rectangle = Rectangle(5, 6)
@@ -58,12 +58,12 @@ class Testrectangle(unittest.TestCase):
     def test_eq(self) -> None:
         rect1 = Rectangle(5, 5)
         rect2 = Rectangle(6, 6)
-        self.assertFalse(rect1.area() == rect2.area())
+        self.assertFalse(rect1.area == rect2.area)
 
     def test_lessthan(self) -> None:
         rect1 = Rectangle(5, 5)
         rect2 = Rectangle(6, 6)
-        self.assertTrue(rect1.area() < rect2.area())
+        self.assertTrue(rect1.area < rect2.area)
 
 
 class Testsquare(unittest.TestCase):
@@ -75,11 +75,11 @@ class Testsquare(unittest.TestCase):
 
     def test_area(self) -> None:
         square = Square(5)
-        self.assertAlmostEqual(square.area(), 25, places=1)
+        self.assertAlmostEqual(square.area, 25, places=1)
 
     def test_peri(self) -> None:
         square = Square(5)
-        self.assertAlmostEqual(square.perimeter(), 20)
+        self.assertAlmostEqual(square.perimeter, 20)
 
     def test_str(self) -> None:
         square = Square(5)

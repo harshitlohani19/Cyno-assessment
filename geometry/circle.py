@@ -8,6 +8,7 @@ class Circle:
         """
         self.radius = radius
 
+    @property
     def area(self) -> float:
         """
         Returns the area of the circle.
@@ -15,6 +16,7 @@ class Circle:
         area = math.pi * self.radius**2
         return area
 
+    @property
     def circumference(self) -> float:
         """
         Returns the circumference of the circle.
