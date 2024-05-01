@@ -11,8 +11,8 @@ def main():
         radius = input("Enter Radius: ")
         try:
             radius = float(radius)
-                circle = Circle(float(radius))
-                print(circle)
+            circle = Circle(float(radius))
+            print(circle)
         except ValueError:
             print("Invalid Radius")
     elif figure == "square":
