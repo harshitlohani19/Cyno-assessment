@@ -33,7 +33,7 @@ def main() -> None:
             width = float(width)
             height = float(height)
             if width < 0 or height < 0:
-                print("Width or height cannot be 0")
+                print("Width or height cannot be negative")
             else:
                 print(Rectangle(width, height))
         except ValueError:
