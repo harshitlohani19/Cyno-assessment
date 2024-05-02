@@ -6,6 +6,7 @@ from geometry.rectangle import Rectangle
 def main() -> None:
     figure = input("Choose Shape: Circle, Rectangle, Square- ")
     figure = figure.lower()
+    figure = figure.strip()
     if figure == "circle":
         radius = input("Enter Radius: ")
         try:
