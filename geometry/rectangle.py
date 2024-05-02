@@ -12,6 +12,7 @@ class Rectangle:
         """
         return self.width * self.height
 
+    @property
     def perimeter(self) -> float:
         """
         Calculates the perimeter of the rectangle.
