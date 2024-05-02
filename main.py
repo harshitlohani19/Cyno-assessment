@@ -43,4 +43,5 @@ def main() -> None:
         print("Invalid Shape")
 
 
-main()
+if __name__ == "__main__":
+    main()
