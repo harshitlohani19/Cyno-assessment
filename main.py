@@ -3,7 +3,7 @@ from geometry.square import Square
 from geometry.rectangle import Rectangle
 
 
-def main():
+def main() -> None:
     figure = input("Choose Shape: Circle, Rectangle, Square- ")
     figure = figure.lower()
     if figure == "circle":
