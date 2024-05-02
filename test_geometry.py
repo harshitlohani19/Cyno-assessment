@@ -48,7 +48,7 @@ class Testrectangle(unittest.TestCase):
 
     def test_perimeter(self) -> None:
         rectangle = Rectangle(5, 6)
-        self.assertEqual(rectangle.perimeter(), 22)
+        self.assertEqual(rectangle.perimeter, 22)
 
     def test_str(self) -> None:
         rectangle = Rectangle(5, 6)
