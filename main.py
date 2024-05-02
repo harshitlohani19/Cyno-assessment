@@ -10,7 +10,7 @@ def main() -> None:
         try:
             radius = float(radius)
             if radius > 0:
-                circle = Circle(float(radius))
+                circle = Circle((radius))
                 print(circle)
             else:
                 print("Radius cannot be negative")
