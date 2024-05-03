@@ -6,7 +6,6 @@ class Square:
     def area(self) -> float:
         """
         Calculates the area of the square.
-        @params:
         @return: float
 
         """
@@ -16,7 +15,6 @@ class Square:
     def perimeter(self) -> float:
         """
         Calculates the perimeter of the square.
-        @params:
         @return: float
         """
         return 4 * self.side_length
@@ -24,7 +22,6 @@ class Square:
     def __str__(self) -> str:
         """
         Returns the string representation of the square.
-        @params:
         @return: str
         """
         return f"Square with side length {self.side_length}"
@@ -32,7 +29,6 @@ class Square:
     def __eq__(self, other) -> bool:
         """
         Returns True if their areas are equal, False otherwise.
-        @params:
         @return: bool
         """
         return self.side_length == other.side_length
@@ -41,7 +37,6 @@ class Square:
         """
         Returns True if the area of the current square is less
         than the area of the other square, False otherwise.
-        @params:
         @return: bool
         """
         return self.side_length < other.side_length
