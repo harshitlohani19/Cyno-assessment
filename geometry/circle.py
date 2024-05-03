@@ -9,7 +9,6 @@ class Circle:
     def area(self) -> float:
         """
         Calculates the area of the circle.
-        @params:
         @return: float
         """
         area = math.pi * self.radius**2
@@ -19,7 +18,6 @@ class Circle:
     def circumference(self) -> float:
         """
         Calculates the circumference of the circle.
-        @params:
         @return: float
         """
         circumference = 2 * math.pi * self.radius
@@ -28,7 +26,6 @@ class Circle:
     def __str__(self) -> str:
         """
         Returns a string representation of the Circle object.
-        @params:
         @returns: str
         """
         str_repr = f"Circle radius: {self.radius}"
@@ -37,7 +34,6 @@ class Circle:
     def __eq__(self, other) -> bool:
         """
         Checks if the areas of two circles are equal.
-        @params:
         @returns:bool
         """
         aeq = self.radius == other.radius
@@ -47,7 +43,6 @@ class Circle:
         """
         Checks if the area of the current
         circle is less than the area of another circle.
-        @params:
         @returns:bool
         """
         lt = self.radius < other.radius

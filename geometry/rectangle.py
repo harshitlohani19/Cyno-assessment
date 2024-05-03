@@ -7,7 +7,6 @@ class Rectangle:
     def area(self) -> float:
         """
         Calculates the area of the rectangle.
-        @params:
         @return: float
         """
         return self.width * self.height
@@ -16,7 +15,6 @@ class Rectangle:
     def perimeter(self) -> float:
         """
         Calculates the perimeter of the rectangle.
-        @params:
         @return: float
         """
         return 2 * (self.width + self.height)
@@ -24,7 +22,6 @@ class Rectangle:
     def __str__(self) -> str:
         """
         Returns a string representation of the rectangle.
-        @params:
         @return: str
         """
         return f"Rectangle with width {self.width} and height {self.height}"
@@ -32,7 +29,6 @@ class Rectangle:
     def __eq__(self, other) -> bool:
         """
         Returns True if equal, False otherwise.
-        @params:
         @return: bool
         """
         return self.area == other.area
@@ -41,7 +37,6 @@ class Rectangle:
         """
         Returns True if area of the current rectangle is less than the area
         of the other rectangle, False otherwise.
-        @params:
         @return: bool
         """
         return self.area < other.area
